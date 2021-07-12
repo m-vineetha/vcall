@@ -1,6 +1,5 @@
 const name = prompt("What's your name?");
 
-document.getElementById("name1").innerHTML = name;
 
 // Generate random room name if needed
 if (!location.hash) {
