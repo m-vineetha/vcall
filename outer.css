@@ -9,9 +9,7 @@ body{
     margin: 150px 150px 150px 150px;
 }
 .buttons{
-   display: flex;
-}
-   
+    display: flex;
 }
 .box{
     margin: 150px 150px 150px 200px;
