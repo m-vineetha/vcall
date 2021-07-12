@@ -4,28 +4,39 @@
   <script type='text/javascript' src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
   <script>
       function joinmeet()
       {
           var code = document.getElementById("val").value;
-          window.location.href = "https://m-vineetha.github.io/vaaapp/in#"+code;    
+          window.location.href = "file:///C:/Users/Ramya/Desktop/vapp/vapp.html#"+code;          
 
       }
       function createmeet()
       {
-          window.location.href = "https://m-vineetha.github.io/vaaapp/in";
+          window.location.href = "file:///C:/Users/Ramya/Desktop/vapp/vapp.html";
 
       }
   </script>
+  <style>
+      
+    </style>
 </head>
 <body>
     <div class="box">
-        <button class="btn" onclick="createmeet()">Create New Meeting</button>
-        <h1>Or</h1>
-        <h4>Enter the meeting code</h1>
-        <input type="text" id="val" class="code"/>
+        <h2>Vcall</h2>
+        <h2>A video chat app</h2>
+        <h3>Free for everyone</h3>
+        <input type="text" id="val" placeholder="Enter your name" style="margin-right: 10px;" style="margin-bottom: 10px;" class="code"/>
+        <button class="btn" onclick="joinmeet()" style="margin-bottom: 10px;">Submit</button>
+        <div class="buttons">
+        <button class="btn" onclick="createmeet()" style="margin-right: 10px;">Create New Meeting</button>
+        <input type="text" id="val" placeholder="Enter the meeting code" style="margin-right: 10px;" class="code"/>
         <button class="btn" onclick="joinmeet()">Join</button>
+        </div>
+    </div>
+    <div class="imag">
+        <img src="https://miro.medium.com/max/1400/1*XEu9XT-U1RKmuTtz8k3qMQ.png" width="350" height="300">
     </div>
 </body>
 </html>
