@@ -1,3 +1,5 @@
+const name = prompt("What's your name?");
+
 // Generate random room name if needed
 if (!location.hash) {
   location.hash = Math.floor(Math.random() * 0xFFFFFF).toString(16);
@@ -137,6 +139,10 @@ function localDescriptionCreated(desc) {
   );
 
 }
+ const nameEl = template.content.querySelector('.message__name');
+  if (options.emoji || options.name) {
+    nameEl.innerText = options.emoji + ' ' + options.name;
+  }
 
 function hangUpCall() {
   closeVideoCall();
