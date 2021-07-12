@@ -139,10 +139,6 @@ function localDescriptionCreated(desc) {
   );
 
 }
- const nameEl = template.content.querySelector('.message__name');
-  if (options.emoji || options.name) {
-    nameEl.innerText = options.emoji + ' ' + options.name;
-  }
 
 function hangUpCall() {
   closeVideoCall();
@@ -151,6 +147,9 @@ function hangUpCall() {
     target: targetUsername,
     type: "hang-up"
   });
+}
+function myFunction() {
+  document.getElementById("demo").innerHTML = roomHash;
 }
 
 function closeVideoCall() {
