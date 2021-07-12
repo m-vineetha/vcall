@@ -20,6 +20,9 @@ body {
     position: fixed;
     margin-bottom: 50px;
   }
+.message__name {
+      padding: 10px 0;
+    }
 #hangup-button {
 display:block;
 width:80px;
