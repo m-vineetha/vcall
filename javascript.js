@@ -143,6 +143,7 @@ function localDescriptionCreated(desc) {
 }
 
 function hangUpCall() {
+	alert("call has ended");
   closeVideoCall();
   sendToServer({
     name: myUsername,
