@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type='text/javascript' src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="style.css">
+  <script>
+      function joinmeet()
+      {
+          var code = document.getElementById("val").value;
+          window.location.href = "https://m-vineetha.github.io/vcall/#"+code;    
+
+      }
+      function createmeet()
+      {
+          window.location.href = "https://m-vineetha.github.io/vcall/";
+
+      }
+  </script>
+</head>
+<body>
+    <div class="box">
+        <button class="btn" onclick="createmeet()">Create New Meeting</button>
+        <h1>Or</h1>
+        <h4>Enter the meeting code</h1>
+        <input type="text" id="val" class="code"/>
+        <button class="btn" onclick="joinmeet()">Join</button>
+    </div>
+</body>
+</html>
