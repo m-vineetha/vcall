@@ -150,7 +150,7 @@ function hangUpCall() {
 }
 function display()
   {
-    document.getElementById("demo") = roomHash;
+    document.getElementById("demo").innerHTML = roomHash;
     document.getElementById('code').style.color = "white";
     document.getElementById('code').disabled = true;
   }
