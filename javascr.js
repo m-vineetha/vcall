@@ -92,15 +92,13 @@ function beginWebRTC(isOfferer) {
 navigator.mediaDevices.getUserMedia({
     audio: true,
     video: true,
-  }).then(stream => {
+  }).then(stream) => {
 
-    // Displays our video in #local element
-    local.srcObject = stream;
-
-    // Send to peer
+  localStream = stream
+	document.getElementById("local-video").srcObject = local;
     stream.getTracks().forEach(track => newCon.addTrack(track, stream));
   }, onError);
-
+document.getElementById("remote-video").srcObject = e.stream
   // Scale Drone sends signaling data
   room.on('data', (message, client) => {
 
