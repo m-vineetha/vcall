@@ -151,9 +151,13 @@ function hangUpCall() {
     type: "hang-up"
   });
 }
-function myFunction() {
-  document.getElementById("demo").innerHTML = roomHash;
-}
+function display()
+  {
+    console.log(roomHash);
+    document.getElementById('code').value = roomHash;
+    document.getElementById('code').style.color = "white";
+    document.getElementById('code').disabled = true;
+  }
 
 function closeVideoCall() {
   var remoteVideo = document.getElementById("remote");
