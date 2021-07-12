@@ -1,5 +1,3 @@
-const name = prompt("What's your name?");
-
 
 // Generate random room name if needed
 if (!location.hash) {
@@ -142,7 +140,7 @@ function localDescriptionCreated(desc) {
 }
 
 function hangUpCall() {
-	return alert("call has ended");
+	alert("call has ended");
   closeVideoCall();
   sendToServer({
     name: myUsername,
