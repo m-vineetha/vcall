@@ -7,20 +7,16 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <div id="video-call-div">
+   <div class="b">
   <div class="Message">Vcall</div>
-  <video muted id="local-video" autoplay ></video>
-  <video id="remote-video" autoplay></video>
+  <video id="local" autoplay muted></video>
+  <video id="remote" autoplay></video>
     </div>
   <button onclick="muteaudio()">mute</button>
  <input type="button" id="code" value="Room Code" onclick="display()" style="margin-bottom: 10px;">
   <a id="demo"> </a>
 <!--   <button onclick="myFunction()">Click me!</button> -->
   <button id="hangup-button" onclick="hangUpCall()">End Call</button>
-  <div class="call-action-div>
-              <button onclick="mutevideo()">Mute Video</button>
-               <button onclick="muteaudio()">Mute Audio</button> 
-     </div>
   <script src="javascr.js"></script>
 </body>
 </html>
