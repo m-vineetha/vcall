@@ -22,7 +22,7 @@ const ser = {
 };
 let room;
 let pc;
-
+let localStream;
 
 //Function when connection is success
 function success() {};
@@ -66,7 +66,7 @@ function sendMessage(message) {
 function beginWebRTC(isOfferer) {
   //new connection
   newCon = new RTCPeerConnection(ser);
-
+newCon.addStream(localStream)
   newCon.onicecandidate = event => {
     if (event.candidate) {
       sendMessage({'candidate': event.candidate});
@@ -93,7 +93,7 @@ navigator.mediaDevices.getUserMedia({
     audio: true,
     video: true,
   }).then(stream => {
-
+localStream = stream
     // Displays our video in #local element
     local.srcObject = stream;
 
@@ -108,7 +108,11 @@ navigator.mediaDevices.getUserMedia({
     if (client.id === drone.clientId) {
       return;
     }
-
+let isAudio=true;
+function muteAudio() {
+	isAudio= !isAudio
+	localStream.getAudioTracks()[0].enabled = isAudio;
+}
     if (message.sdp) {
       
       newCon.setRemoteDescription(new RTCSessionDescription(message.sdp), () => {
