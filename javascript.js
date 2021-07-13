@@ -138,13 +138,6 @@ function localDescriptionCreated(desc) {
   );
 
 }
-const muteAudio = document.getElementById('muteAudio');
-
-function muteaudio(){
-  room.localParticipant.audioTracks.forEach(track => {
-    track.disable();
-  });
-});
 
 function hangUpCall() {
 	alert("call has ended");
