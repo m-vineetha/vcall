@@ -1,5 +1,5 @@
 # vaaapp
-Vcall is a simple video chat webapp created using node.js and webRTC.
+Vcall is a simple video chat webapp created using node.js and WebRTC.
 
 The site is published at [vcall](https://m-vineetha.github.io/vaaapp/)
 
