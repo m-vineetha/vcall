@@ -13,12 +13,35 @@ body{
 .buttons{
     display: flex;
 }
-
+#val{
+    border: 2px solid rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+  padding: 6px 6px;
+}
+.btn{
+    
+border-radius: 8px;
+background-color:blue;
+border: 1px solid rgba(255, 255, 255, 0.7);
+box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.4);
+font-size: 14px;
+font-family: "Lucida Grande", "Arial", sans-serif;
+color: rgba(255, 255, 255, 1.0);
+cursor: pointer;
+}
+h1{
+    color: rgb(19, 6, 6);
+    text-align:  center;
+}
+h3{
+    color: rgb(51, 33, 33);
+    text-align:  center;
+}
 .box{
     margin: 150px 150px 150px 200px;
     top: 100px;
-    border: 50px solid rgba(99,93,93);
-    box-shadow: 0px 0px 1px 2px rgba(0, 0, 0, 0.4);
-    border-radius: 50%;
-    background-color: rgba(99,93,93);
+    border: 50px solid rgb(233, 231, 231);
+    box-shadow: 0px 0px 1px 2px rgba(0, 0, 0, 0.6);
+    border-radius: 30%;
+    background-color: rgb(233, 231, 231);
 }
