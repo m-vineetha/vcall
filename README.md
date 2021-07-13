@@ -1,12 +1,12 @@
 # vaaapp
 Vcall is a simple video chat webapp created using node.js and WebRTC.
 
-The site is published at [vcall](https://m-vineetha.github.io/vaaapp/)
+The site is published at [vcall](https://m-vineetha.github.io/vcall/)
 
 ![](https://user-images.githubusercontent.com/85978861/125434664-1511bc89-4b6c-43d1-a810-58ccfd3181cc.JPG)
 
 ## Usage
-Click on [vcall](https://m-vineetha.github.io/vaaapp/) to go to the website.
+Click on [vcall](https://m-vineetha.github.io/vcall/) to go to the website.
 
 If you want to create a new meeting then click on the New Meet and share the room code with other peer.
 
