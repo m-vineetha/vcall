@@ -179,7 +179,7 @@ function closeVideoCall() {
 
     newCon.close();
     newCon = null;
-location.replace("https://m-vineetha.github.io/vaaapp/");
+location.replace("https://m-vineetha.github.io/vcall/");
   }
 
   remoteVideo.removeAttribute("src");
