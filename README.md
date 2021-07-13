@@ -3,7 +3,7 @@ Vcall is a simple video chat webapp created using node.js and webRTC.
 
 The site is published at [vcall](https://m-vineetha.github.io/vaaapp/)
 
-![]("https://user-images.githubusercontent.com/85978861/125434664-1511bc89-4b6c-43d1-a810-58ccfd3181cc.JPG");
+![]("https://user-images.githubusercontent.com/85978861/125434664-1511bc89-4b6c-43d1-a810-58ccfd3181cc.JPG")
 
 ## Usage
 Click on [vcall](https://m-vineetha.github.io/vaaapp/) to go to the website.
